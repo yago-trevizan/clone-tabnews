@@ -10,7 +10,7 @@ beforeAll(async () => {
 });
 
 describe("POST /api/v1/sessions", () => {
-  describe("Anonymous user", () => {
+  describe("Default user", () => {
     test("With incorrect `email` but correct `password`", async () => {
       await orchestrator.createUser({
         password: "senha-correta",
